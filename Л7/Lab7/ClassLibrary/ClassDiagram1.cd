@@ -1,14 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ClassLibrary.Interfaces.MyObject">
-    <Position X="5.75" Y="0.75" Width="1.5" />
+    <Position X="6.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAgAAAAAAAAAAAAEAAAAAAAAACAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Interfaces\MyObject.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLibrary.Models.Grenade">
-    <Position X="3.5" Y="3.25" Width="1.5" />
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="ClassLibrary.Interfaces.MyObject" ManuallyRouted="true">
+      <Path>
+        <Point X="7.25" Y="3.074" />
+        <Point X="7.25" Y="3.324" />
+        <Point X="6.25" Y="3.324" />
+        <Point X="6.25" Y="2.99" />
+        <Point X="4" Y="2.99" />
+        <Point X="4" Y="3.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAEAAAAAAAEAAAAAQEAAAAAAAA=</HashCode>
       <FileName>Models\Grenade.cs</FileName>

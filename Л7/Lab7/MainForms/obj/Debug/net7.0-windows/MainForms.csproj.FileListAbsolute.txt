@@ -20,3 +20,4 @@ D:\KPI\3 курс 1 семестр\ТРПЗ\Лаб\Л7\Lab7\MainForms\obj\Debug\
 D:\KPI\3 курс 1 семестр\ТРПЗ\Лаб\Л7\Lab7\MainForms\obj\Debug\net7.0-windows\MainForms.csproj.CopyComplete
 D:\KPI\3 курс 1 семестр\ТРПЗ\Лаб\Л7\Lab7\MainForms\obj\Debug\net7.0-windows\MainForms.Properties.Resources.resources
 D:\KPI\3 курс 1 семестр\ТРПЗ\Лаб\Л7\Lab7\MainForms\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+D:\KPI\3 курс 1 семестр\ТРПЗ\Лаб\Л7\Lab7\MainForms\obj\Debug\net7.0-windows\MainForms.sourcelink.json

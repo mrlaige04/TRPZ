@@ -1,0 +1,41 @@
+﻿@model QuardaticEquation;
+
+<div>
+    <form asp-controller="Home" asp-action="Index" method="post">
+        <fieldset>
+            <div class="form-group">
+                <label class="col-form-label mt-4" for="inputDefault">A</label>
+                <input asp-for="a" type="number" name="@nameof(Model.a)" class="form-control">
+                <span asp-validation-for="a" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="col-form-label mt-4" for="inputDefault">B</label>
+                <input asp-for="b" type="number" name="@nameof(Model.b)" class="form-control">
+                <span asp-validation-for="b" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="col-form-label mt-4" for="inputDefault">C</label>
+                <input asp-for="c" type="number" name="@nameof(Model.c)" class="form-control">
+                <span asp-validation-for="c" class="text-danger"></span>
+            </div>
+            <button type="submit" class="mt-4 btn btn-primary">Submit</button>
+        </fieldset>
+    </form>
+
+    <div class="mt-4 ">
+        @if(Model != null && Model.Result != null)
+        {
+            if (Model.Result.D < 0)  {
+                <p>D = (@Model.Result.D) less than 0, so no solution :(</p>
+            } else if (Model.Result.D == 0)
+            {
+                <p>D = @Model.Result.D</p>
+                <p>x1 = x2 = @Model.Result.X1</p>
+            } else {
+                <p>D = @Model.Result.D</p>
+                <p>x1 = @Model.Result.X1</p>
+                <p>x2 = @Model.Result.X2</p>
+            }
+        }
+        </div>
+</div>
