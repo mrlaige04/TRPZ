@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TV>
+<a class="btn btn-primary" asp-controller="TVPrice" asp-action="TVForm">Create new</a>
+
+
+<table class="table mt-3 table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Price</th>
+            <td scope="col">Edit</td>
+            <td scope="col">Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model is not null)
+        {
+            @foreach (var tv in Model)
+            {
+                <tr>
+                    <th scope="row">@tv.Name</th>
+                    <td>@tv.Brand</td>
+                    <td>@tv.Model</td>
+                    <td><a asp-controller="TVPrice" asp-action="TVPrice" asp-route-tvId="@tv.Id">Price</a></td>
+                    <td><a asp-controller="TVPrice" class="btn btn-primary" asp-action="EditTV" asp-route-tvId="@tv.Id">Edit</a></td>
+                    <td><button onclick="DeleteTv('@tv.Id')" class="btn btn-danger">Delete</button></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<script>
+    async function DeleteTv(id) {
+        await fetch(`/TVPrice/DeleteTV?tvId=${id}`, {
+            method: 'POST'
+        }).then(r=>location.reload())
+    }
+</script>

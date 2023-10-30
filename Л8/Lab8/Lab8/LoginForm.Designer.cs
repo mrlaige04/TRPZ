@@ -165,7 +165,7 @@ partial class LoginForm
         ClientSize = new Size(317, 196);
         Controls.Add(tableLayoutPanel1);
         Name = "LoginForm";
-        Text = "Form1";
+        Text = "Login";
         Load += LoginForm_Load;
         tableLayoutPanel1.ResumeLayout(false);
         tableLayoutPanel1.PerformLayout();

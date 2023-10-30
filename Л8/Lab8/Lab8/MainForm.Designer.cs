@@ -376,7 +376,7 @@ partial class MainForm
         ClientSize = new Size(800, 450);
         Controls.Add(mainTable);
         Name = "MainForm";
-        Text = "MainForm";
+        Text = "Meal Compositions";
         Load += MainForm_Load;
         mainTable.ResumeLayout(false);
         tableLayoutPanel2.ResumeLayout(false);

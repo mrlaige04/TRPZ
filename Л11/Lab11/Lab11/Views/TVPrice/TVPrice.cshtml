@@ -1,0 +1,21 @@
+﻿@model Price
+
+<table class="table mt-3 table-striped">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Price</th>
+            <th scope="col">Currency</th>
+            <th scope="col">LastUpdated</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model is not null)
+        {
+            <tr>
+                <th scope="row">@Model.Value</th>
+                <td>@Model.Currency</td>
+                <td>@Model.LastUpdated</td>
+            </tr>
+        }
+    </tbody>
+</table>
